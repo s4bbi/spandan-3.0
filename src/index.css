@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: mooner-regular;
+    src: url("./assets/fonts/mooner-regular.otf") format(opentype);
+}
+
+@font-face {
+    font-family: mooner-regularoutline;
+    src: url("./assets/fonts/mooner-regularoutline.otf") format(opentype);
+}
+
+@font-face {
+    font-family: Gilroy-Light;
+    src: url("./assets/fonts/Gilroy-Light.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url("./assets/fonts/Gilroy-SemiBold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url("./assets/fonts/Gilroy-Bold.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: Exo2-Regular;
+    src: url("./assets/fonts/Exo2-Regular.otf") format(opentype);
+}
+
+@font-face {
+    font-family: Exo2-SemiBold;
+    src: url("./assets/fonts/Exo2-SemiBold.otf") format(opentype);
+}
+
+@font-face {
+    font-family: Exo2-Italic;
+    src: url("./assets/fonts/Exo2-Italic.otf") format(opentype);
+}

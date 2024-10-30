@@ -1,4 +1,4 @@
-import soon from "../src/assets/soon.jpeg";
+import soon from "../src/assets/soon.webp";
 import soon_phone from "../src/assets/soon_phone.webp";
 import "./index.css"
 
