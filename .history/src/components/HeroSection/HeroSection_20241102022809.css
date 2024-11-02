@@ -1,0 +1,46 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 50px; 
+    max-width: 1200px;
+    margin: 192px; */
+  }
+  
+  .hero-text {
+    /* width: 50%; */
+    color: white;
+    padding-left: 104px;
+  }
+  
+  .hero-title {
+    width: 339px;
+    height: 87px;
+    top: 192px;
+    left: 104px;
+gap: 0px;
+opacity: 0px;
+
+    font-size: 4em;
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+  }
+  
+  .hero-description {
+    margin-top: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  .highlight {
+    color: yellow;
+    font-weight: bold;
+  }
+  
+  .hero-image {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+  }
+  

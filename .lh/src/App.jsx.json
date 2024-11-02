@@ -1,0 +1,170 @@
+{
+    "sourceFile": "src/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 38,
+            "patches": [
+                {
+                    "date": 1730492151869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730492159128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-import Navbar from './components/Navbar/Navbar'\r\n+import  from './components/Navbar/Navbar'\r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n"
+                },
+                {
+                    "date": 1730492165158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-import  from './components/Navbar/Navbar'\r\n+import {Route } from './components/Navbar/Navbar'\r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n"
+                },
+                {
+                    "date": 1730492170990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-import {Route } from './components/Navbar/Navbar'\r\n+import {Route Routes} from './components/Navbar/Navbar'\r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n"
+                },
+                {
+                    "date": 1730492178242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-import {Route Routes} from './components/Navbar/Navbar'\r\n+import {Route, Routes} from './components/Navbar/Navbar'\r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n"
+                },
+                {
+                    "date": 1730492199130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-import {Route, Routes} from './components/Navbar/Navbar'\r\n+import {Route, Routes} from '.react-router-dom'\r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n"
+                },
+                {
+                    "date": 1730492213366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-import {Route, Routes} from '.react-router-dom'\r\n+import {Route, Routes} from 'react-router-dom'\r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n"
+                },
+                {
+                    "date": 1730492222336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n import {Route, Routes} from 'react-router-dom'\r\n+\r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n"
+                },
+                {
+                    "date": 1730492231305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n+      <\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1730492237459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import React from 'react'\r\n+import Navbar from './components/Navbar/Navbar'\r\n+import {Route, Routes} from 'react-router-dom'\r\n+\r\n+const App = () => {\r\n+  return (\r\n+    <div className='app'>\r\n+      <Navbar/>\r\n+      <Routes>\r\n+        \r\n+      </Routes>\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default App\r\n"
+                },
+                {
+                    "date": 1730492243407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,25 +6,11 @@\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n       <Routes>\r\n-        \r\n+        <Route path=\"/\" element={<Home />} />\r\n       </Routes>\r\n     </div>\r\n   )\r\n }\r\n \r\n export default App\r\n-import React from 'react'\r\n-import Navbar from './components/Navbar/Navbar'\r\n-import {Route, Routes} from 'react-router-dom'\r\n-\r\n-const App = () => {\r\n-  return (\r\n-    <div className='app'>\r\n-      <Navbar/>\r\n-      <\r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default App\r\n"
+                },
+                {
+                    "date": 1730492255262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     <div className='app'>\r\n       <Navbar/>\r\n       <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n+        \r\n       </Routes>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1730492266509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <div className='app'>\r\n       <Navbar/>\r\n       <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n-        \r\n+        <Route path=\"\" element={<Home />} />\r\n       </Routes>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1730492276609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     <div className='app'>\r\n       <Navbar/>\r\n       <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n-        <Route path=\"\" element={<Home />} />\r\n+        <Route path=\"Events\" element={< />} />\r\n       </Routes>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1730492379348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-import {Route, Routes} from 'react-router-dom'\r\n+// import {Route, Routes} from 'react-router-dom'\r\n \r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n       <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n-        <Route path=\"Events\" element={< />} />\r\n+        <Route path=\"Events\" element={<Events />} />\r\n       </Routes>\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1730492384892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n-      <Routes>\r\n+      {/* <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n         <Route path=\"Events\" element={<Events />} />\r\n-      </Routes>\r\n+      </Routes> */}\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1730492455559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import React from 'react'\r\n+import Navbar from './components/Navbar/Navbar'\r\n+// import {Route, Routes } from 'react-router-dom'\r\n+\r\n+const App = () => {\r\n+  return (\r\n+    <div className='app'>\r\n+      <Navbar/>\r\n+      {/* <Routes>\r\n+        <Route path=\"/\" element={<Home />} />\r\n+        <Route path=\"Events\" element={<Events />} />\r\n+      </Routes> */}\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default App\r\n"
+                },
+                {
+                    "date": 1730492469056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-// import {Route, Routes } from 'react-router-dom'\r\n+// import { Route, Routes } from 'react-router'\r\n \r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n@@ -14,21 +14,4 @@\n   )\r\n }\r\n \r\n export default App\r\n-import React from 'react'\r\n-import Navbar from './components/Navbar/Navbar'\r\n-// import {Route, Routes} from 'react-router-dom'\r\n-\r\n-const App = () => {\r\n-  return (\r\n-    <div className='app'>\r\n-      <Navbar/>\r\n-      {/* <Routes>\r\n-        <Route path=\"/\" element={<Home />} />\r\n-        <Route path=\"Events\" element={<Events />} />\r\n-      </Routes> */}\r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default App\r\n"
+                },
+                {
+                    "date": 1730492475067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-// import { Route, Routes } from 'react-router'\r\n+import { Route, Routes } from 'react-router-dom'\r\n \r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n"
+                },
+                {
+                    "date": 1730492481566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n-      {/* <Routes>\r\n+      { <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n         <Route path=\"Events\" element={<Events />} />\r\n-      </Routes> */}\r\n+      </Routes> }\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1730492505122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n-      { <Routes>\r\n+      {/* { <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n         <Route path=\"Events\" element={<Events />} />\r\n-      </Routes> }\r\n+      </Routes> } */}\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1730492511928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-import { Route, Routes } from 'react-router-dom'\r\n+// import { Route, Routes } from 'react-router-dom'\r\n \r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n"
+                },
+                {
+                    "date": 1730492526469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import React from 'react'\r\n+import Navbar from './components/Navbar/Navbar'\r\n+import { Route, Routes } from 'react-router-dom'\r\n+\r\n+const App = () => {\r\n+  return (\r\n+    <div className='app'>\r\n+      <Navbar/>\r\n+      {/* { <Routes>\r\n+        <Route path=\"/\" element={<Home />} />\r\n+        <Route path=\"Events\" element={<Events />} />\r\n+      </Routes> } */}\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default App\r\n"
+                },
+                {
+                    "date": 1730492534913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,30 +5,13 @@\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n-      {/* { <Routes>\r\n+      { <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n         <Route path=\"Events\" element={<Events />} />\r\n-      </Routes> } */}\r\n+      </Routes> }\r\n     </div>\r\n   )\r\n }\r\n \r\n export default App\r\n-import React from 'react'\r\n-import Navbar from './components/Navbar/Navbar'\r\n-// import { Route, Routes } from 'react-router-dom'\r\n-\r\n-const App = () => {\r\n-  return (\r\n-    <div className='app'>\r\n-      <Navbar/>\r\n-      {/* { <Routes>\r\n-        <Route path=\"/\" element={<Home />} />\r\n-        <Route path=\"Events\" element={<Events />} />\r\n-      </Routes> } */}\r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default App\r\n"
+                },
+                {
+                    "date": 1730492998893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-import { Route, Routes } from 'react-router-dom'\r\n+// import { Route, Routes } from 'react-router-dom'\r\n \r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n"
+                },
+                {
+                    "date": 1730493006509,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n-      { <Routes>\r\n+      {/* { <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n         <Route path=\"Events\" element={<Events />} />\r\n-      </Routes> }\r\n+      </Routes> } */}\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1730493017472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n-// import { Route, Routes } from 'react-router-dom'\r\n+import { Route, Routes } from 'react-router-dom'\r\n \r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n"
+                },
+                {
+                    "date": 1730493031199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n-      {/* { <Routes>\r\n+      { <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n         <Route path=\"Events\" element={<Events />} />\r\n-      </Routes> } */}\r\n+      </Routes> }\r\n     </div>\r\n   )\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1730493207371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n import { Route, Routes } from 'react-router-dom'\r\n+import \r\n \r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n"
+                },
+                {
+                    "date": 1730493212857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n import { Route, Routes } from 'react-router-dom'\r\n-import \r\n+import Home from \r\n \r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n"
+                },
+                {
+                    "date": 1730493229726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n import { Route, Routes } from 'react-router-dom'\r\n-import Home from \r\n+import Home from  './pages/Home/Home'\r\n \r\n+\r\n+\r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n"
+                },
+                {
+                    "date": 1730493237264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n import { Route, Routes } from 'react-router-dom'\r\n import Home from  './pages/Home/Home'\r\n+import Home from  './pages/Home/Events'\r\n \r\n \r\n-\r\n const App = () => {\r\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n"
+                },
+                {
+                    "date": 1730493243684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n import { Route, Routes } from 'react-router-dom'\r\n import Home from  './pages/Home/Home'\r\n-import Home from  './pages/Home/Events'\r\n+import Home from  './pages/Events/Events'\r\n \r\n \r\n const App = () => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1730493266350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import React from 'react'\r\n import Navbar from './components/Navbar/Navbar'\r\n import { Route, Routes } from 'react-router-dom'\r\n import Home from  './pages/Home/Home'\r\n-import Home from  './pages/Events/Events'\r\n+import Events from  './pages/Events/Events'\r\n \r\n \r\n const App = () => {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1730493878978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n     <div className='app'>\r\n       <Navbar/>\r\n       { <Routes>\r\n         <Route path=\"/\" element={<Home />} />\r\n-        <Route path=\"Events\" element={<Events />} />\r\n+        <Route path=\"/\" element={<Events />} />\r\n       </Routes> }\r\n     </div>\r\n   )\r\n }\r\n"
+                },
+                {
+                    "date": 1730493884697,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n       { <Routes>\r\n-        <Route path=\"/\" element={<Home />} />\r\n+        <Route path=\"\" element={<Home />} />\r\n         <Route path=\"/\" element={<Events />} />\r\n       </Routes> }\r\n     </div>\r\n   )\r\n"
+                },
+                {
+                    "date": 1730493903494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+import React from 'react'\r\n+import Navbar from './components/Navbar/Navbar'\r\n+import { Route, Routes } from 'react-router-dom'\r\n+import Home from  './pages/Home/Home'\r\n+import Events from  './pages/Events/Events'\r\n+\r\n+\r\n+const App = () => {\r\n+  return (\r\n+    <div className='app'>\r\n+      <Navbar/>\r\n+      { <Routes>\r\n+        <Route path=\"/\" element={<Home />} />\r\n+        <Route path=\"Events\" element={<Events />} />\r\n+      </Routes> }\r\n+    </div>\r\n+  )\r\n+}\r\n+\r\n+export default App\r\n"
+                },
+                {
+                    "date": 1730538346910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,32 +9,12 @@\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n       { <Routes>\r\n-        <Route path=\"/\" element={<Home />} />\r\n+        <Route path=\"\" element={<Home />} />\r\n         <Route path=\"Events\" element={<Events />} />\r\n       </Routes> }\r\n     </div>\r\n   )\r\n }\r\n \r\n export default App\r\n-import React from 'react'\r\n-import Navbar from './components/Navbar/Navbar'\r\n-import { Route, Routes } from 'react-router-dom'\r\n-import Home from  './pages/Home/Home'\r\n-import Events from  './pages/Events/Events'\r\n-\r\n-\r\n-const App = () => {\r\n-  return (\r\n-    <div className='app'>\r\n-      <Navbar/>\r\n-      { <Routes>\r\n-        <Route path=\"\" element={<Home />} />\r\n-        <Route path=\"/\" element={<Events />} />\r\n-      </Routes> }\r\n-    </div>\r\n-  )\r\n-}\r\n-\r\n-export default App\r\n"
+                },
+                {
+                    "date": 1730538354093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n   return (\r\n     <div className='app'>\r\n       <Navbar/>\r\n       { <Routes>\r\n-        <Route path=\"\" element={<Home />} />\r\n-        <Route path=\"Events\" element={<Events />} />\r\n+        <Route path=\"Home\" element={<Home />} />\r\n+        <Route path=\"/\" element={<Events />} />\r\n       </Routes> }\r\n     </div>\r\n   )\r\n }\r\n"
+                }
+            ],
+            "date": 1730492151869,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\nimport Navbar from './components/Navbar/Navbar'\r\nimport Navbar from './components/Navbar/Navbar'\r\nconst App = () => {\r\n  return (\r\n    <div className='app'>\r\n      <Navbar/>\r\n    </div>\r\n  )\r\n}\r\n\r\nexport default App\r\n"
+        }
+    ]
+}

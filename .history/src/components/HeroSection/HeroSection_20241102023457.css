@@ -1,0 +1,49 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-top: 50px; 
+    max-width: 1200px;
+    margin: 192px; */
+  }
+  
+  .hero-text {
+    /* width: 50%; */
+    color: white;
+    padding-left: 104px;
+  }
+  
+  .hero-title {
+    width: 339px;
+    height: 87px;
+    padding-top: 192px;
+    font-family: Mooner;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 87.19px;
+   }
+  
+  .hero-description {
+    width: 385px;
+    height: 110px;
+    padding-top: px;
+    font-family: Exo 2;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.6px;
+    color: #ccc;
+    color: #535353;
+
+  }
+  
+  .highlight {
+    color:#FFFF00;
+    font-weight: bold;
+  }
+  
+  .hero-image {
+    width: 45%;
+    max-width: 500px;
+    height: auto;
+  }
+  

@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/Footer/Footer.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1730536472510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1730536490302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-\r\n+import \"./HeroSection.css\";\r\n const Footer = () => {\r\n   return (\r\n     <div>\r\n       \r\n"
+                },
+                {
+                    "date": 1730536497435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from 'react'\r\n-import \"./.css\";\r\n+import \"./F.css\";\r\n const Footer = () => {\r\n   return (\r\n     <div>\r\n       \r\n"
+                }
+            ],
+            "date": 1730536472510,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\n\r\nconst Footer = () => {\r\n  return (\r\n    <div>\r\n      \r\n    </div>\r\n  )\r\n}\r\n\r\nexport default Footer\r\n"
+        }
+    ]
+}
