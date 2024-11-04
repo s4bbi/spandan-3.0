@@ -4,6 +4,7 @@ import Footer from "../src/components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
 import CountdownTimer from './components/CountdownTimer/CountdownTimer';
 import Days from './components/HomeComponents/Days';
+import Partners from './components/HomeComponents/Partners'
 import "./index.css";
 
 const App = () => {
@@ -15,7 +16,12 @@ const App = () => {
         <HeroSection /> 
       </div>
       <CountdownTimer targetDate={targetDate} />
+      <div>
       <Days />
+      </div>
+      <div>
+      <Partners />
+      </div>
       <Footer />
     </div>
   );
