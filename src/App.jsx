@@ -1,5 +1,7 @@
+import Navbar from "../src/components/Navbar/Navbar";
 import Footer from "../src/components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
+
 
 
 // import soon from "../src/assets/soon.webp";
@@ -13,6 +15,7 @@ const App = () => {
       
       {/* <img src={soon} alt="soon img" className="w-screen h-screen object -cover hidden md:flex" /> */}
       {/* <img src={soon_phone} alt="phone img" className="w-screen h-screen object-cover flex md:hidden"/> */}
+      <Navbar />
       <HeroSection />
       <Footer />
     </div>
