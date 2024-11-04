@@ -1,26 +1,23 @@
+import React from 'react';
 import Navbar from "../src/components/Navbar/Navbar";
 import Footer from "../src/components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
-
-
-
-// import soon from "../src/assets/soon.webp";
-// import soon_phone from "../src/assets/soon_phone.webp";
-import "./index.css"
+import CountdownTimer from './components/CountdownTimer/CountdownTimer';
+import "./index.css";
 
 const App = () => {
+  const targetDate = new Date("2024-11-18T09:59:59");
   return (
-    
-    <div className="h-screen w-screen min-h-screen flex flex-col justify-center items-center">
-      
-      {/* <img src={soon} alt="soon img" className="w-screen h-screen object -cover hidden md:flex" /> */}
-      {/* <img src={soon_phone} alt="phone img" className="w-screen h-screen object-cover flex md:hidden"/> */}
+     <div className="h-screen w-screen flex flex-col bg-black mt-0">
       <Navbar />
-      <HeroSection />
+      <div className=" flex items-left  justify-center  mt-0"> {/* Adjust margin-top here */}
+        <HeroSection /> 
+        
+      </div>
+      <CountdownTimer targetDate={targetDate} />
       <Footer />
     </div>
   );
 }
-
 
 export default App;

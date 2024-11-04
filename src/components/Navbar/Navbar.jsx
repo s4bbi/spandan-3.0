@@ -11,14 +11,14 @@ const Navbar = () => {
 
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-4 text-base font-medium text-center gap-5 items-center">
-          <a href="#home" className="hover:text-yellow-300">HOME</a>
-          <a href="#events" className="hover:text-yellow-300">EVENTS</a>
-          <a href="#teams" className="hover:text-yellow-300">TEAMS</a>
-          <a href="#gallery" className="hover:text-yellow-300">GALLERY</a>
+          <a href="#home" className="hover:text-yellow-200 font-gSB">HOME</a>
+          <a href="#events" className="hover:text-yellow-300 font-gSB">EVENTS</a>
+          <a href="#teams" className="hover:text-yellow-300 font-gSB">TEAMS</a>
+          <a href="#gallery" className="hover:text-yellow-300 font-gSB">GALLERY</a>
         </nav>
 
         {/* Register Now Button */}
-        <a href="#register" className="bg-yellow-400 text-black font-semibold py-2 px-4 rounded-md hover:bg-yellow-300">
+        <a href="#register" className="bg-yellow-400 text-black font-gL py-2 px-4 rounded-md hover:bg-yellow-300">
           REGISTER NOW
         </a>
       </div>
