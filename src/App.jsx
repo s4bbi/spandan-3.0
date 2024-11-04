@@ -3,7 +3,7 @@ import Navbar from "../src/components/Navbar/Navbar";
 import Footer from "../src/components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
 import CountdownTimer from './components/CountdownTimer/CountdownTimer';
-import Days from "./components/HomeComponents/Days";
+import Days from './components/HomeComponents/Days';
 import "./index.css";
 
 const App = () => {
@@ -13,12 +13,9 @@ const App = () => {
       <Navbar />
       <div className=" flex items-left  justify-center  mt-0"> {/* Adjust margin-top here */}
         <HeroSection /> 
-        
-      </div>
-      <div className=''>
-        <Days />
       </div>
       <CountdownTimer targetDate={targetDate} />
+      <Days />
       <Footer />
     </div>
   );

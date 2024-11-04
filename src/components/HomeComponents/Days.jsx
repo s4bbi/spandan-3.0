@@ -2,10 +2,10 @@ import React from 'react';
 
 const EventTimeline = () => {
   return (
-    <div className="relative flex items-center bg-black text-white p-8 rounded-lg h-auto">
+    <div className="relative flex items-center bg-black text-white p-8 h-auto">
       {/* Image positioned absolutely */}
       <div className="absolute flex-shrink-0 ml-[20px]">
-        <img src="src/assets/Images/watch.webp" alt="Watch" className="w-38 h-auto" />
+        <img src="src/assets/Images/watch.webp" alt="Watch" className="w-80 h-auto" />
       </div>
       {/* Adjust the container to take up the rest of the space */}
       <div className="flex-1 flex flex-col items-center space-y-12">
@@ -27,3 +27,5 @@ const EventTimeline = () => {
     </div>
   );
 };
+
+export default EventTimeline;
