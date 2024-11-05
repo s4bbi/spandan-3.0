@@ -1,26 +1,27 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <header className="bg-black text-white p-4 w-full mt-[34px]">
+    <header className="bg-black text-white p-4 w-full mt-[1px]">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-4xl font-bold">
+        <div className="text-4xl ">
           LOGO
         </div>
 
         {/* Navigation Links */}
-        <nav className="hidden md:flex space-x-4 text-base font-medium text-center gap-5 items-center">
-          <a href="#home" className="hover:text-yellow-200 font-gSB">HOME</a>
-          <a href="#events" className="hover:text-yellow-300 font-gSB">EVENTS</a>
-          <a href="#teams" className="hover:text-yellow-300 font-gSB">TEAMS</a>
-          <a href="#gallery" className="hover:text-yellow-300 font-gSB">GALLERY</a>
+        <nav className=" md:flex space-x-4 text-base text-center gap-5 items-center">
+        <Link to="/">HOME</Link>
+        <Link to="/events">EVENTS</Link>
+          <Link to="/TEAMS" className="hover:text-yellow-300 font-gSB">TEAMS</Link>
+          <Link to="/GALLERY" className="hover:text-yellow-300 font-gSB">GALLERY</Link>
         </nav>
 
         {/* Register Now Button */}
-        <a href="#register" className="bg-yellow-400 text-black font-gL py-2 px-4 rounded-md hover:bg-yellow-300">
+        <Link to="/register" className="bg-yellow-300 border-none py-4 px-8 text-lg cursor-pointer rounded-full text-black font-bold gL-5 transition duration-300 ease-in-out shadow-[0px_4px_10px_rgba(255,235,59,0.5)] hover:bg-yellow-400">
           REGISTER NOW
-        </a>
+        </Link>
       </div>
     </header>
   );

@@ -3,9 +3,9 @@ import React from 'react';
 
 function HeroSection() {
     return (
-        <section className="flex items-center mt-15.5 align-item-left justify-between h-screen bg-black text-white p-[20px_210px] box-border">
+        <section className="flex items-center justify-between px-6 lg:px-20 py -12 bg-black text-white box-border">
             <div className="flex flex-col gap-0">
-                <h1 className="text-4xl font-bold text-yellow-300 text-left relative font-mR">
+                <h1 className="text-4xl font-bold text-yellow-300 text-left max-w-md font-mR ">
                     spandan
                     <span className="absolute inset-0 "></span>
                 </h1>
@@ -33,11 +33,11 @@ function HeroSection() {
                 </div>
             </div>
             <div className="flex items-center justify-end"> {/* Change justify-between to justify-end */}
-                <div className="relative">
-                    <div className="absolute inset-0 w-[629px] h-[629px] top-[137px] left-[1385px] gap-0 rounded-[100px] rounded-l-none opacity-0 rotate-[-180deg] absolute "></div> {/* Black background */}
-                    <img src="src/assets/Images/robot left.webp" alt="Robot" className="ml-auto style={{ marginRight:'-0px'}}" /> {/* Add margin-left auto to push the image to the right */}
-                </div>
-            </div>
+    <div className="flex items-center">
+       
+        <img src="src/assets/Images/robot left.webp" alt="Robot" className="w-1/10 max-w-md mx-auto " /> {/* Adjusted width and height */}
+    </div>
+</div>
         </section>
     );
 }
