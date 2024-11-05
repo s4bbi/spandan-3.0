@@ -6,6 +6,7 @@ import CountdownTimer from './components/CountdownTimer/CountdownTimer';
 import Days from './components/HomeComponents/Days';
 import Partners from './components/HomeComponents/Partners';
 import Casousel from './components/HomeComponents/Carousel';
+import Description from './components/Description/Description';
 import "./index.css";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
         <HeroSection /> 
       </div>
       <CountdownTimer targetDate={targetDate} />
+      <Description/>
       <div>
       <Days />
       </div>
