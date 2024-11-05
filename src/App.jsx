@@ -4,7 +4,8 @@ import Footer from "../src/components/Footer/Footer";
 import HeroSection from "./components/HeroSection/HeroSection";
 import CountdownTimer from './components/CountdownTimer/CountdownTimer';
 import Days from './components/HomeComponents/Days';
-import Partners from './components/HomeComponents/Partners'
+import Partners from './components/HomeComponents/Partners';
+import Casousel from './components/HomeComponents/Carousel';
 import "./index.css";
 
 const App = () => {
@@ -21,6 +22,9 @@ const App = () => {
       </div>
       <div>
       <Partners />
+      </div>
+      <div>
+      <Casousel />
       </div>
       <Footer />
     </div>
