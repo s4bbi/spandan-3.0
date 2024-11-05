@@ -5,10 +5,11 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import CountdownTimer from './components/CountdownTimer/CountdownTimer';
 import "./index.css";
 
+
 const App = () => {
   const targetDate = new Date("2024-11-18T09:59:59");
   return (
-     <div className="h-screen w-screen flex flex-col bg-black mt-0">
+     <div className=" overflow-hidden  w-screen">
       <Navbar />
       <div className=" flex items-left  justify-center  mt-0"> {/* Adjust margin-top here */}
         <HeroSection /> 
