@@ -1,18 +1,35 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
-// import EventPage from "./Pages/EventsPage";
-import Homepage from "./Pages/HomePage";
+import React from 'react';
+import Navbar from "../src/components/Navbar/Navbar";
+import Footer from "../src/components/Footer/Footer";
+import HeroSection from "./components/HeroSection/HeroSection";
+import CountdownTimer from './components/CountdownTimer/CountdownTimer';
+import Days from './components/HomeComponents/Days';
+import Partners from './components/HomeComponents/Partners';
+import Casousel from './components/HomeComponents/Carousel';
+import Description from './components/Description/Description';
+import "./index.css";
 
-function App() {
-  
+const App = () => {
+  const targetDate = new Date("2024-11-18T09:59:59");
   return (
-    <BrowserRouter>
-      <div>
-        <Routes>
-          <Route index element={<Homepage />}></Route>
-          {/* <Route path="/Events" element={<EventPage />}></Route> */}
-        </Routes>
+     <div className="h-screen w-screen flex flex-col bg-black mt-0">
+      <Navbar />
+      <div className=" flex items-left  justify-center  mt-0"> {/* Adjust margin-top here */}
+        <HeroSection /> 
       </div>
-    </BrowserRouter>
+      <CountdownTimer targetDate={targetDate} />
+      <Description/>
+      <div>
+      <Days />
+      </div>
+      <div>
+      <Partners />
+      </div>
+      <div>
+      <Casousel />
+      </div>
+      <Footer />
+    </div>
   );
 }
 
