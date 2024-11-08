@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-// import EventPage from "./Pages/EventsPage";
+import EventPage from "./Pages/EventsPage";
 import Homepage from "./Pages/HomePage";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <div className="">
         <Routes>
           <Route index element={<Homepage />}></Route>
-          {/* <Route path="/Events" element={<EventPage />}></Route> */}
+          <Route path="/Events" element={<EventPage />}></Route>
         </Routes>
       </div>
     </BrowserRouter>
