@@ -40,7 +40,7 @@ const Menu = () => {
             EVENTS
           </Link>
           <Link
-            to="/AboutUs"
+            to="/Teams"
             className={`${currentPath === "/Teams" ? activeClass : ""} hover:text-yellow-300 font-gSB`}
             onClick={() => clickHandler("Teams")}
           >

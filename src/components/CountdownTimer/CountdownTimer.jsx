@@ -30,22 +30,25 @@ const CountdownTimer = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-<div className="bg-black height-500vh  flex items-center justify-center">
-      <div className="flex space-x-20 text-white" style={{ fontSize: '64px', fontFamily: 'gL' }}>
-        <div className="flex flex-col items-center">
+    <div className="bg-black h-500vh flex items-center justify-center">
+      <div
+        className="flex space-x-10 sm:space-x-12 md:space-x-16 lg:space-x-20 text-white"
+        style={{ fontFamily: 'gL' }}
+      >
+        <div className="flex flex-col items-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           <span>{timeLeft.days}D</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           <span>{timeLeft.hours}H</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           <span>{timeLeft.minutes}M</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
           <span className="text-yellow-500">{timeLeft.seconds}S</span>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 
