@@ -1,63 +1,65 @@
-import React from 'react'
-import leftarm from '../../assets/Images/left-arm.webp';
-import rightarm from '../../assets/Images/right-arm.webp';
+import React from 'react';
 
-const Description = () => {
+const EventsPage = () => {
+
+  const competitions = [
+    { name: "Hackathon", image: "src/assets/Images/Hackathon.webp" },
+    { name: "Water Rocket Competition", image: "src/assets/Images/waterRocket.webp" },
+    { name: "Bridge Design Competition", image: "src/assets/Images/bridgeDes.webp" },
+    { name: "Auto-CAD Competition", image: "src/assets/Images/autoCAD.webp" },
+    { name: "Project Exhibition", image: "src/assets/Images/projExh.webp" },
+    { name: "Case Study", image: "src/assets/Images/caseStudy.webp" },
+    { name: "Robo Race", image: "src/assets/Images/roboRace.webp" },
+    { name: "Line Following Robot", image: "src/assets/Images/LFR.webp" },
+    { name: "UI Designing", image: "src/assets/Images/UID.webp" },
+    { name: "Startup Pitch", image: "src/assets/Images/startupP.webp" },
+    { name: "Coding Competition", image: "src/assets/Images/UID.webp" },
+    { name: "BGMI Event", image: "src/assets/Images/BGMI.webp" },
+    { name: "Tech Quiz", image: "src/assets/Images/TechQuiz.webp" },
+    { name: "Machine Learning Competition", image: "src/assets/Images/MLComp.webp" },
+    { name: "Chess Competition", image: "src/assets/Images/chess.webp" },
+    { name: "Egg Drop", image: "src/assets/Images/eggDrop.webp" },
+    { name: "Imagine AI", image: "src/assets/Images/imagineAI.webp" },
+    { name: "GEN-O-QUEST", image: "" },
+  ];
+  
   return (
-    
-    <div className="bg-black text-white w-full ">
+    <div className="bg-black min-h-screen flex flex-col items-center justify-center text-white p-8">
      
-      <div className="p-[104px]">
-        {/* Title */}
-        <h1 className="text-5xl font-bold text-[#FFFF00] mt-[61px] font-gB ">
-          Spandan, <span className="text-white">what's that?</span>
-        </h1>
-        
-        {/* Main Content */}
-        <div className="flex gap-[100px]">
-          {/* Left Column */}
-          <div className="pt-[104px]">
-            <p className="text-[#535353] font-Exo 2 w-[350px] text-base">
-              Welcome to <span className="text-[#FFFF00]">Spandan 3.0</span>, the annual techfest of GBPIET, Pauri-Garhwal, where innovation meets purpose! This year's theme, <span className="italic text-[#FFFF00]">'Rural Revive: Tech Solutions for Rural Challenges'</span> is dedicated to harnessing the power of technology to address the unique challenges faced by rural communities.
-               </p>
-            <img src={leftarm} alt="Robot Hand Left" class="max-w-s mt-[70px]"/>
-          </div>
-
-           {/* Center Text */}
-        <div className="pt-[312px]">
-          <p className="text-[#535353] font-Exo 2 w-[350px] text-base">
-            Spandan 3.0 is an exciting platform for students, innovators, and tech enthusiasts to come together and explore ground-breaking ideas that can uplift rural areas. Through a series of competitions, workshops, and expert talks, participants will tackle real-world issues such as sustainable farming, access to education, healthcare innovations, and smart infrastructure solutions.
-          </p>
-            
-        </div>
-
-          {/* Right Column */}
-          <div className="pt-[42px]">
-            <p className="text-[#535353] font-Exo 2 w-[350px]">
-              <span className="font-bold text-[#FFFF00]">Our goal</span> is to inspire practical, scalable tech solutions that can make a tangible difference in the lives of rural populations. Whether you're a seasoned developer or an emerging thinker, Spandan 3.0 offers a chance to make an impact while celebrating technological progress.
-            </p>
-            <img src={rightarm} alt="Robot Hand Left" class="max-w-xl mt-[30px] "/>
-          </div>
-        
-
-       
-        </div>
-
-        {/* Bottom Text */}
-        <div className="mt-8 text-center">
-          <p className="text-[#FFFF00] font-Exo 2 ">
-            Join us in this mission to bridge the urban-rural divide and create a brighter, tech-enabled future for all!
+      <div className="flex flex-row items-center mt-16 text-left">
+        <div className="flex flex-col items-start mr-8">
+          <h1 className="text-6xl font-bold font-72 font-mR mb-4">EVENTS</h1>
+          <p className="text-gray-300 max-w-lg leading-relaxed">
+            Join Spandan 24 at GBPIET, Pauri-Garhwal, where we focus on <span className="text-yellow-400 font-eSB">Rural Revive: Tech Solutions for Rural Challenges.</span> 
+            Our events offer a platform for innovation, collaboration, and problem-solving with a futuristic edge.
           </p>
         </div>
+        <div>
+          <img src="src/assets/Images/eventsHand.webp" alt="Robotic Hand" className="w-1/10 max-w-md" />
         </div>
-        
       </div>
-    
+   
+
+    <div className="bg-black min-h-screen p-4 text-center">
+      <h1 className="text-yellow-400 text-4xl font-gB mb-8">Competitions</h1>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-12">
+        {competitions.map((competition, index) => (
+          <div key={index} className="relative bg-black border border-yellow-400 rounded-lg overflow-hidden hover:shadow-lg transform hover:scale-105 transition duration-300">
+            <img
+              src={competition.image}
+              alt={competition.name}
+              className="w-full h-40 object-cover opacity-70"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <h2 className="text-white font-semibold text-lg">{competition.name}</h2>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+     </div>
+  );
+};
 
 
-
-
-  )
-}
-
-export default Description
+export default EventsPage;
