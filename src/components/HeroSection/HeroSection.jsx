@@ -1,9 +1,9 @@
-// src/components/HeroSection.js
 import React from 'react';
 
 function HeroSection() {
     return (
-        <section className="flex items-center mt-15.5 align-item-left justify-between h-screen bg-black text-white p-[20px_210px] box-border">
+        <div >
+            <section className="flex items-center justify-between h-screen bg-black text-white px-[10%] py-[10%]">
             <div className="flex flex-col gap-0">
                 <h1 className="text-4xl font-bold text-yellow-300 text-left relative font-mR">
                     spandan
@@ -32,14 +32,15 @@ function HeroSection() {
                     </div>
                 </div>
             </div>
-            <div className="flex items-center justify-end"> {/* Change justify-between to justify-end */}
-                <div className="relative">
-                    <div className="absolute inset-0 w-[629px] h-[629px] top-[137px] left-[1385px] gap-0 rounded-[100px] rounded-l-none opacity-0 rotate-[-180deg] absolute "></div> {/* Black background */}
-                    <img src="src/assets/Images/robot left.webp" alt="Robot" className="ml-auto style={{ marginRight:'-0px'}}" /> {/* Add margin-left auto to push the image to the right */}
+
+                <div className="flex items-center justify-centre box-border max-w-[550px]">
+                    <div className="relative">
+                        <img src="src/assets/Images/robot left.webp" alt="Robot" className="ml-auto" />
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     );
 }
 
-export default HeroSection;
+export default HeroSection;

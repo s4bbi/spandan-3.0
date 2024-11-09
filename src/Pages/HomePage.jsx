@@ -15,9 +15,7 @@ const App = () => {
   return (
     <div className="h-screen w-screen flex flex-col bg-black mt-0">
       <Navbar />
-      <div className="w-full flex items-left justify-center mt-0">
-        <HeroSection />
-      </div>
+      <HeroSection />
       <div className="w-full">
         <CountdownTimer targetDate={targetDate} />
       </div>
