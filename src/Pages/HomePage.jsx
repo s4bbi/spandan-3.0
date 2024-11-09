@@ -6,7 +6,8 @@ import CountdownTimer from '../components/CountdownTimer/CountdownTimer';
 import Days from '../components/HomeComponents/Days';
 import Partners from '../components/HomeComponents/Partners';
 import Casousel from '../components/HomeComponents/Carousel';
-import More from '../components/More/More'
+// import More from '../components/More/More'
+import Description from "../components/Description/Description";
 import "../index.css";
 
 const App = () => {
@@ -22,10 +23,13 @@ const App = () => {
       <Days />
       </div>
       <div>
-        <More/>
-      <Partners />
+        {/* <More/> */}
+        <Description />
       </div>
       <div>
+      <Partners />
+      </div>
+      <div className='bg-black'>
       <Casousel />
       </div>
       <Footer />
