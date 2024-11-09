@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import Hackathon2 from '../../assets/Carousel/Hackathon2.jpg';
+import Dashboard from '../../assets/Carousel/Dashboard.png';
 
 const ImageCarousel = () => {
   // Array of image URLs
   const images = [
-    "C:\Users\dangw\Downloads\Hackathon.jpg",
-    "C:\Users\dangw\Downloads\Hackathon.jpg",
-    "C:\Users\dangw\Downloads\Hackathon.jpg",
-    "C:\Users\dangw\Downloads\Hackathon.jpg",
-    "C:\Users\dangw\Downloads\Hackathon.jpg",
-    "C:\Users\dangw\Downloads\Hackathon.jpg",
+    Hackathon2, // Use the imported image directly
+    Dashboard,
+    Hackathon2,
+    Dashboard,
+    Hackathon2,
+    Dashboard,
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,14 +32,14 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <div className="overflow-hidden relative max-w-5xl mx-auto">
+    <div className="bg-black overflow-hidden relative max-w-5xl mx-auto p-4">
       <div className="flex transition-transform duration-500 ease-in-out">
         {visibleImages.map((image, index) => (
           <img
             key={index}
             src={image}
-            alt={`Slide ${currentIndex + index + 1}`}
-            className="w-1/3 object-cover"
+            alt={`Slide ${currentIndex + index + 1}`} // More descriptive alt text is better
+            className="w-1/3 object-cover mx-2" // Add margin for spacing between images
           />
         ))}
       </div>
