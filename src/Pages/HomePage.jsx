@@ -6,6 +6,7 @@ import CountdownTimer from '../components/CountdownTimer/CountdownTimer';
 import Days from '../components/HomeComponents/Days';
 import Partners from '../components/HomeComponents/Partners';
 import Casousel from '../components/HomeComponents/Carousel';
+import More from '../components/More/More'
 import "../index.css";
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
       <Days />
       </div>
       <div>
+        <More/>
       <Partners />
       </div>
       <div>
